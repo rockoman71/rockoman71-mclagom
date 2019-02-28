@@ -8,6 +8,6 @@ import java.util.concurrent.CompletableFuture;
 public class HelloServiceImpl implements HelloService {
     @Override
     public ServiceCall<NotUsed, String> hello(String id) {
-        return request -> CompletableFuture.completedFuture("hello v3: " + id);
+        return request -> CompletableFuture.completedFuture("hello v4mc: " + id);
     }
 }
