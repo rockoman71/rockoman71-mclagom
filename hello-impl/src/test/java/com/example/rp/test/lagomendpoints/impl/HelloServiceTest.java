@@ -16,7 +16,7 @@ public class HelloServiceTest {
             HelloService service = server.client(HelloService.class);
 
             String msg1 = service.hello("Alice").invoke().toCompletableFuture().get(5, SECONDS);
-            assertEquals("hello: Alice", msg1);
+            assertEquals("hello v3: Alice", msg1);
         });
     }
 }
